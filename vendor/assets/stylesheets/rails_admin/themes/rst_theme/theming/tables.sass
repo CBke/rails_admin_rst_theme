@@ -4,7 +4,6 @@ body.rails_admin .table
     background: #fff
   td
     padding: 20px
-    border: none
   th
     padding: 20px
     color: rgba(90, 97, 102, 0.5)
@@ -17,5 +16,8 @@ body.rails_admin .table
       &:hover i
         color: $orange
 
-.table-striped > tbody > tr:nth-child(odd) > td
-  background: #f9fafb
+.table-striped > tbody 
+  > tr:nth-child(odd) > td
+    background: #f9fafb
+  > tr:nth-child(even) > td
+    background: #fff
